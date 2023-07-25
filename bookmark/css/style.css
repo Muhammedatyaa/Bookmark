@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Pacifico&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7ecde;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    width: fit-content;
+    position: relative;
+    color: #352e28;
+}
+
+h1:after {
+    content: "";
+    width: 100%;
+    height: 30%;
+    left: 0;
+    bottom: 0;
+    background-color: #fec260;
+    position: absolute;
+    z-index: -1;
+    transition: height 0.3s linear;
+}
+
+h1:hover::after {
+    height: 70%;
+}
+
+.bookmark .content {
+    border: 1px dotted;
+    border-color: black transparent black transparent;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+form label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content form button {
+    color: white;
+    background-color: #d1512d;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content form button:hover {
+    background-color: #c2421f;
+    color: white;
+}
+
+table {
+    font-size: 18px;
+}
+
+table button {
+    padding: 8px 20px;
+    border-radius: 3px;
+    border: 0;
+    color: white;
+}
+
+table button a {
+    color: white;
+    text-decoration: none;
+}
+
+table button i {
+    padding-right: 5px;
+}
+
+button.visit {
+    background-color: #9eb23b;
+}
+
+button.delete {
+    background-color: #eb1d36;
+}
+
+.validation {
+    display: none;
+    height: 100%;
+}
+
+.validation .backlayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #040404;
+    width: 100%;
+    height: 120vh;
+    opacity: 0.4;
+}
+
+.validation .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+}
+
+.validation .card .card-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.validation .card .card-head ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.validation .card .card-head ul li {
+    width: 20px;
+    height: 20px;
+    background-color: #3ca55c;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+.validation .card .card-head ul li:nth-child(1){
+    background-color: #f15f5d;
+}
+
+.validation .card .card-head ul li:nth-child(2){
+    background-color: #febe2e;
+}
+
+.validation .card .card-head ul li:nth-child(3){
+    background-color: #4db748;
+}
+
+.validation .card .card-head .close-icon {
+    cursor: pointer;
+}
+
+.validation .card p {
+    font-weight: bold;
+}
+
+.validation .card ul {
+    list-style: none;
+}
+
+.validation .card ul li i {
+    padding-right: 8px;
+    color: #fec260;
+}
